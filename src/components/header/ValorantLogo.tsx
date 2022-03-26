@@ -4,7 +4,7 @@ import ValorantLogo from "../ValorantLogo";
 const HeaderValorantLogo: FC = () => (
   <div className="cursor-pointer">
     <div
-      className="ml-10
+      className="ml-3 sm:ml-10
     lg:hidden"
     >
       <ValorantLogo width={109} height={35} fill="white" />
