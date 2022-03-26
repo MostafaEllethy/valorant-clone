@@ -1,0 +1,82 @@
+$fonts-src: './assets/fonts';
+
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('#{$fonts-src}/markpro/MarkPro-Bold.eot');
+    src: url('#{$fonts-src}/markpro/MarkPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-src}/markpro/MarkPro-Bold.woff2') format('woff2'),
+    url('#{$fonts-src}/markpro/MarkPro-Bold.woff') format('woff'),
+    url('#{$fonts-src}/markpro/MarkPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINNextLTW05';
+    src: url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Medium.eot');
+    src: url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Medium.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Medium.woff2') format('woff2'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Medium.woff') format('woff'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'DINNextLTW05Bold';
+    src: url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Bold.eot');
+    src: url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Bold.woff2') format('woff2'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Bold.woff') format('woff'),
+    url('#{$fonts-src}/dinnextltw05/DINNextLTW05-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tungsten-Bold';
+    src: url('#{$fonts-src}/tungsten/Tungsten-Bold.eot');
+    src: url('#{$fonts-src}/tungsten/Tungsten-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-src}/tungsten/Tungsten-Bold.woff2') format('woff2'),
+    url('#{$fonts-src}/tungsten/Tungsten-Bold.woff') format('woff'),
+    url('#{$fonts-src}/tungsten/Tungsten-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next W1G';
+    src: url('#{$fonts-src}/dinnextw1g/DINNextW1G.eot');
+    src: url('#{$fonts-src}/dinnextw1g/DINNextW1G.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-src}/dinnextw1g/DINNextW1G.woff2') format('woff2'),
+    url('#{$fonts-src}/dinnextw1g/DINNextW1G.woff') format('woff'),
+    url('#{$fonts-src}/dinnextw1g/DINNextW1G.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MarkSCOffcW05';
+    src: url('#{$fonts-src}/ffmark/MarkSCOffcW05-Regular.eot');
+    src: url('#{$fonts-src}/ffmark/MarkSCOffcW05-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$fonts-src}/ffmark/MarkSCOffcW05-Regular.woff2') format('woff2'),
+        url('#{$fonts-src}/ffmark/MarkSCOffcW05-Regular.woff') format('woff'),
+        url('#{$fonts-src}/ffmark/MarkSCOffcW05-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    background-color: #ece8e1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
