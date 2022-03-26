@@ -1,6 +1,4 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-/.vscode
-package-lock.json
 
 # dependencies
 /node_modules
@@ -14,6 +12,9 @@ package-lock.json
 /build
 
 # misc
+package-lock.json
+.vscode
+.firebase
 .DS_Store
 .env.local
 .env.development.local
