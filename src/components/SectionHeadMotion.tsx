@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 
-const SectionHeadMotion: FC = ({ children }) => {
+const SectionHeadMotion: FC<{ children?: string }> = ({ children }) => {
   return (
     <motion.div
       initial={{ translateY: "100%" }}

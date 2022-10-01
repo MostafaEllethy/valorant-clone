@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
-const Button: FC<{ accentBorder?: boolean; white?: boolean }> = ({
-  children,
-  accentBorder,
-  white,
-}) => {
+const Button: FC<{
+  accentBorder?: boolean;
+  white?: boolean;
+  children?: ReactNode;
+}> = ({ children, accentBorder, white }) => {
   const bg = white ? "bg-white" : "bg-red";
   const textColor = white ? "text-[#0f1923]" : "text-white";
   const buttonBorderClasses = `${
