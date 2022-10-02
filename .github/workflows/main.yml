@@ -42,6 +42,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: build
+      - name: SSH
       - uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
