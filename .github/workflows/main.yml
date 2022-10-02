@@ -34,10 +34,11 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" >> key.txt
           cat key.txt
+          scp -i key.txt build.tar.gz "$USER"@"$HOST":~/
       #   run:
       #   run: echo "$SSH_PRIVATE_KEY" >> key.txt
       # - name: Upload build
-      #   run: scp -i key.txt build.tar.gz "$USER"@"$HOST":~/
+      #   run:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
