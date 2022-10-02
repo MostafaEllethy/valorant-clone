@@ -25,8 +25,8 @@ jobs:
           npm run build
       - name: Compress build
         run: tar -cvzf build.tar.gz build
-      - name: Save key to file
       - shell: bash
+        name: Store key to file
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           USER: ${{ secrets.USER }}
