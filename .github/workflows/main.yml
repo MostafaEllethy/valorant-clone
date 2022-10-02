@@ -15,21 +15,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository    
-      - uses: actions/checkout@v3
-      - name: npm install and build
-        run: |
-          npm install
-          npm run build
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: |
-            build  
+ # build:
+ #   runs-on: ubuntu-latest
+ #   steps:
+ #     - name: Checkout repository    
+ #     - uses: actions/checkout@v3
+ #     - name: npm install and build
+ #       run: |
+ #         npm install
+ #         npm run build
+ #     - name: Archive production artifacts
+ #       uses: actions/upload-artifact@v3
+ #       with:
+ #         name: build
+ #         path: |
+ #           build  
             
   deploy:
     # The type of runner that the job will run on
