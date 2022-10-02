@@ -23,8 +23,6 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v3
       - name: Compress build
         run: tar -cvzf build.tar.gz build
       - name: Upload build
