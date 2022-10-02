@@ -33,6 +33,8 @@ jobs:
         with:
           name: file-upload
           path: tailwind.config.js
+      - name: command
+        run: ls -la
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
 # build:
