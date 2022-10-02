@@ -26,9 +26,9 @@ jobs:
       - name: Compress build
         run: tar -cvzf build.tar.gz build
       - name: Save key to file
-        run: echo '${{ secrets.SSH_PRIVATE_KEY }}' >> key.txt
+        run: echo "$SSH_PRIVATE_KEY" >> key.txt
       - name: Upload build
-        run: scp -i key.txt build.tar.gz ${{ secrets.USER }}@{{ secrets.HOST }}:~/
+        run: scp -i key.txt build.tar.gz "$USER"@"$HOST":~/
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
 # build:
