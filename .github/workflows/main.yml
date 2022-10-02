@@ -25,6 +25,7 @@ jobs:
           npm run build
       - name: Compress build
         run: tar -cvzf build.tar.gz build
+      - name: Upload to Server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
