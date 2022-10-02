@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_test:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,16 +25,10 @@ jobs:
           npm run build
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: build
-      - name: test file upload
-        uses: actions/upload-artifact@v3
-        with:
-          name: file-upload
-          path: tailwind.config.js
-      - name: command
-        run: ls -la
+      - name: Compress build
+        run: tar -cvzf build.tar.gz build
+      - name: Upload build
+        run: scp -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.USER }}@{{ secrets.HOST }}:~/ build.tar.gz
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # jobs:
 # build:
