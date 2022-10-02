@@ -38,11 +38,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Download build
-      - uses: actions/download-artifact@v3
-        with:
-          name: build
-      - name: SSH
+      #- name: Download build
+      #- uses: actions/download-artifact@v3
+      #  with:
+      #    name: build
+      #- name: SSH
       - uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
