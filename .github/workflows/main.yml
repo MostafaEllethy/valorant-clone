@@ -20,5 +20,14 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script_stop: true
           script: |
-            sh valorant-clone.sh
+            if [ ! -d "valorant-clone" ]
+            then
+                    git clone -b main https://github.com/MostafaEllethy/valorant-clone.git
+            fi
+
+            cd valorant-clone
+            git fetch
+            git checkout main
+            git pull
+            sudo docker-compose up -d --build
             
