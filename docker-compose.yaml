@@ -2,8 +2,6 @@ version: "3"
 services:
   react-app:
     build: .
-    ports:
-      - "80:80"
     network_mode: bridge
     environment:
       - VIRTUAL_HOST=valorant-clone.mostafaellethy.com
