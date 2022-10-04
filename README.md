@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[View Live Demo](https://valorant-clone.vercel.app/)
+[View Live Demo](https://valorant-clone.mostafaellethy.com/)
 
 ## PageSpeed Insights
 
