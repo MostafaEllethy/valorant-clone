@@ -19,8 +19,8 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script_stop: true
-          script: |
-            [ ! -d "valorant-clone" ] && git clone -b main https://github.com/MostafaEllethy/valorant-clone.git --single-branch
+          script: | 
+            [! -d "valorant-clone" ] && git clone -b main https://github.com/MostafaEllethy/valorant-clone.git --single-branch
             cd valorant-clone
             git fetch
             git checkout main
