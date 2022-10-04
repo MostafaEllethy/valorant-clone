@@ -1,4 +1,4 @@
-name: Deploy
+name: CI
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
   SSH:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Script
+      - name: Fetch Repo
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -20,11 +20,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script_stop: true
           script: |
-            git clone -b main https://github.com/MostafaEllethy/valorant-clone.git --single-branch;
             cd valorant-clone
             git fetch
-            git checkout main
             git pull
             sudo docker-compose up -d --build
-            cd ..
-            rm valorant-clone -r -f
